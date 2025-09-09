@@ -22,20 +22,20 @@ PlanIt — Backend (Django + DRF)
 
 ## ⚙️ Puesta en marcha (dev)
 
-# 1) **Crear/activar entorno virtual**
+## 1) **Crear/activar entorno virtual**
 
 > python -m venv .venv
-# Windows
+## Windows
 > .\.venv\Scripts\Activate.ps1
 # macOS / Linux
 > source .venv/bin/activate
 
-# 2) Instalar dependencias
+## 2) Instalar dependencias
 
 > python -m pip install --upgrade pip
 > pip install django djangorestframework django-cors-headers django-environ Pillow
 
-# 3) **Migrar, crear admin y levantar**
+## 3) **Migrar, crear admin y levantar**
 
 > python manage.py makemigrations
 > python manage.py migrate
@@ -43,7 +43,7 @@ PlanIt — Backend (Django + DRF)
 > python manage.py runserver  # http://127.0.0.1:8000/
 
 
-### 4) Estructura del proyecto
+## 4) Estructura del proyecto
 
 ```text
 PROYECTO/
@@ -75,7 +75,7 @@ PROYECTO/
 └─ manage.py
 ```
 
-# 5) **Endpoints de prueba**
+## 5) **Endpoints de prueba**
 
 > Admin: http://127.0.0.1:8000/admin
 
@@ -85,7 +85,7 @@ PROYECTO/
 
 > Responde { "anonymous": true } si no hay sesión
 
-# 6) **.gitignore**
+## 6) **.gitignore**
 ```
  .venv/
  __pycache__/
