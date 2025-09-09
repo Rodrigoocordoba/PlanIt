@@ -1,6 +1,5 @@
-# Create README.md content and save it to /mnt/data/README.md
 
-readme = r'''# PlanIt — Backend (Django + DRF)
+PlanIt — Backend (Django + DRF)
 
 > Backend de **PlanIt**, plataforma social para crear, descubrir y vivir planes y eventos en tiempo real.
 
@@ -23,29 +22,30 @@ readme = r'''# PlanIt — Backend (Django + DRF)
 
 ## ⚙️ Puesta en marcha (dev)
 
-1) **Crear/activar entorno virtual**
+# 1) **Crear/activar entorno virtual**
 
-python -m venv .venv
+> python -m venv .venv
 # Windows
-.\.venv\Scripts\Activate.ps1
+> .\.venv\Scripts\Activate.ps1
 # macOS / Linux
-source .venv/bin/activate
+> source .venv/bin/activate
 
-2) **Instalar dependencias**
+# 2) Instalar dependencias
 
-python -m pip install --upgrade pip
-pip install django djangorestframework django-cors-headers django-environ Pillow
+> python -m pip install --upgrade pip
+> pip install django djangorestframework django-cors-headers django-environ Pillow
 
-3) **Migrar, crear admin y levantar**
+# 3) **Migrar, crear admin y levantar**
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver  # http://127.0.0.1:8000/
+> python manage.py makemigrations
+> python manage.py migrate
+> python manage.py createsuperuser
+> python manage.py runserver  # http://127.0.0.1:8000/
 
 
-4) **Estructura del proyecto**
+### 4) Estructura del proyecto
 
+```text
 PROYECTO/
 ├─ .venv/                # entorno virtual (no versionar)
 ├─ apps/                 # apps del dominio (modular)
@@ -73,23 +73,25 @@ PROYECTO/
 ├─ info/                 # docs/notas del proyecto
 ├─ db.sqlite3            # BD de desarrollo
 └─ manage.py
+```
 
-5) **Endpoints de prueba**
+# 5) **Endpoints de prueba**
 
-Admin: http://127.0.0.1:8000/admin
+> Admin: http://127.0.0.1:8000/admin
 
-Healthcheck: GET /health → {"status":"ok"}
+> Healthcheck: GET /health → {"status":"ok"}
 
-Users / me: GET /api/users/me/
+> Users / me: GET /api/users/me/
 
-Responde { "anonymous": true } si no hay sesión
+> Responde { "anonymous": true } si no hay sesión
 
-5) **.gitignore**
-
-.venv/
-__pycache__/
+# 6) **.gitignore**
+```
+ .venv/
+ __pycache__/
 *.pyc
 db.sqlite3
 .env
 media/
 staticfiles/
+```
