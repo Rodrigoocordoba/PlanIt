@@ -24,7 +24,7 @@ readme = r'''# PlanIt — Backend (Django + DRF)
 ## ⚙️ Puesta en marcha (dev)
 
 1) **Crear/activar entorno virtual**
-```bash
+
 python -m venv .venv
 # Windows
 .\.venv\Scripts\Activate.ps1
@@ -32,7 +32,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 2) **Instalar dependencias**
-```bash
+
 python -m pip install --upgrade pip
 pip install django djangorestframework django-cors-headers django-environ Pillow
 
