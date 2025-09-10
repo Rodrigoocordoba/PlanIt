@@ -95,3 +95,19 @@ db.sqlite3
 media/
 staticfiles/
 ```
+## Organizacion del proyecto
+
+**No se trabaja directo sobre main ni sobre dev.**
+
+**Se debe crear una rama feature por cada desarrollo.**
+
+> Main → producción. Solo entra vía PR desde release/*.
+
+> Dev --> integración diaria. Se auto-despliega a ambiente de desarrollo. Acá convergen todas las features
+
+> Feature/* → trabajo por historia/tarea.
+
+ La convencion de los nombres de estas van a ser:
+
+    feature/* → trabajo por historia/tarea. 
+    feature/registro_usuarios
