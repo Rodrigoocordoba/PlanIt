@@ -1,6 +1,7 @@
 
 PlanIt — Backend (Django + DRF)
 
+
 > Backend de **PlanIt**, plataforma social para crear, descubrir y vivir planes y eventos en tiempo real.
 
 - 🧱 **Stack:** Django 5 · Django REST Framework · CORS · SQLite (dev)
